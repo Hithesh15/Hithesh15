@@ -615,7 +615,16 @@
     border: 2px solid #30c384;
   }
 }
-
+.dropdown-contents::after {
+  border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    border-top: 0.4rem solid black;
+    top: 45%;
+    content: "";
+    position: absolute;
+    right: 1rem;
+    pointer-events: none;
+}
   /* ==================== * Country dropdown Styles * ==================== */
   
   /* ==================== *** Form Alignment *** ==================== */
@@ -807,7 +816,6 @@
                 <input type='text' name='' multipick='true' style='display:none;' />
                 <span class="mR10 f22 content-display-area icon-field"></span>
                 <span class="color-222 content-display-area"></span>
-                <span class="">&#9207;</span>
                 <ul class='dropdown-menu'></ul>
               </div>
             </div>
@@ -844,7 +852,6 @@
                 <input type='text' name='' multipick='true' style='display:none;' />
                 <span class="mR10 f22 content-display-area icon-field"></span>
                 <span class="color-222 content-display-area"></span>
-                <span class="">&#9207;</span>
                 <ul class='dropdown-menu'></ul>
               </div>
             </div>
